@@ -41,21 +41,37 @@ Kirki::add_field( 'stanleywp_theme', array(
 	'priority' => 10,
 ) );
 
-	Kirki::add_field( 'stanleywp_theme', array(
-		'type'        => 'select',
-		'settings'    => 'project_items',
-		'label'       => __( 'Project Items', 'stanleywp' ),
-		'section'     => 'projects_section',
-		'default'     => '4',
-		'priority'    => 10,
-		'multiple'    => 1,
-		'choices'     => array(
-			'6' => esc_attr__( '2 Items', 'stanleywp' ),
-			'4' => esc_attr__( '3 Items', 'stanleywp' ),
-			'3' => esc_attr__( '4 Items', 'stanleywp' ),
-			'2' => esc_attr__( '6 Items', 'stanleywp' ),
-		),
-	) );
+Kirki::add_field( 'stanleywp_theme', array(
+	'type'        => 'select',
+	'settings'    => 'project_items',
+	'label'       => __( 'Project Items', 'stanleywp' ),
+	'section'     => 'projects_section',
+	'default'     => '4',
+	'priority'    => 10,
+	'multiple'    => 1,
+	'choices'     => array(
+		'6' => esc_attr__( '2 Items', 'stanleywp' ),
+		'4' => esc_attr__( '3 Items', 'stanleywp' ),
+		'3' => esc_attr__( '4 Items', 'stanleywp' ),
+		'2' => esc_attr__( '6 Items', 'stanleywp' ),
+	),
+) );
+
+Kirki::add_field( 'stanleywp_theme', array(
+	'type'        => 'select',
+	'settings'    => 'project_rows',
+	'label'       => __( 'Project Rows', 'stanleywp' ),
+	'section'     => 'projects_row',
+	'default'     => '2',
+	'priority'    => 10,
+	'multiple'    => 1,
+	'choices'     => array(
+		'6' => esc_attr__( '2 Items', 'stanleywp' ),
+		'4' => esc_attr__( '4 Items', 'stanleywp' ),
+		'3' => esc_attr__( '6 Items', 'stanleywp' ),
+		'2' => esc_attr__( '8 Items', 'stanleywp' ),
+	),
+) );
 
 
 }

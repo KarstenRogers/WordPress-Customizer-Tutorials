@@ -27,19 +27,19 @@ if ( class_exists('Kirki') ) {
 	
 	/* Project Settings */
 	Kirki::add_section( 'projects_section', array(
-	    'title'          => esc_attr__( 'Projects Settings', 'stanleywp' ),
-	    'description'    => esc_attr__( 'Settings for my projects.', 'stanleywp' ),
-	    'priority'       => 160,
-	) );
+		'title'          => esc_attr__( 'Projects Settings', 'stanleywp' ),
+		'description'    => esc_attr__( 'Settings for my projects.', 'stanleywp' ),
+		'priority'       => 160,
+) );
 
-	Kirki::add_field( 'stanleywp_theme', array(
-		'type'     => 'text',
-		'settings' => 'project_title',
-		'label'    => __( 'Title', 'stanleywp' ),
-		'section'  => 'projects_section',
-		'default'  => esc_attr__( 'Projects', 'stanleywp' ),
-		'priority' => 10,
-	) );
+Kirki::add_field( 'stanleywp_theme', array(
+	'type'     => 'text',
+	'settings' => 'project_title',
+	'label'    => __( 'Title', 'stanleywp' ),
+	'section'  => 'projects_section',
+	'default'  => esc_attr__( 'Projects', 'stanleywp' ),
+	'priority' => 10,
+) );
 
 	Kirki::add_field( 'stanleywp_theme', array(
 		'type'        => 'select',

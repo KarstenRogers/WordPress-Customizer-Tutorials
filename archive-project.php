@@ -16,15 +16,15 @@ get_header(); ?>
 				<?php
 				if ( have_posts() ) : ?>
 					<div class="row justify-content-center text-center">
-						<header class="page-header col-md-6">
+					<header class="page-header col-md-6">
 
-							<?php $project_title = get_theme_mod( 'project_title', 'Projects' ); ?>
+					<?php $project_title = get_theme_mod( 'project_title', 'Projects' ); ?>
 
-							<?php if( $project_title != '') : ?>
-								<h1><?php echo $project_title; ?></h1>
-							<?php endif; ?>
+					<?php if( $project_title != '') : ?>
+					<h1><?php echo $project_title; ?></h1>
+					<?php endif; ?>
 
-						</header><!-- .page-header -->
+					</header><!-- .page-header -->
 					</div><!--  .row -->
 
 					<div class="row mt-5">

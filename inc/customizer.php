@@ -29,7 +29,7 @@ if ( class_exists('Kirki') ) {
 	Kirki::add_section( 'projects_section', array(
 	    'title'          => esc_attr__( 'Projects Settings', 'stanleywp' ),
 	    'description'    => esc_attr__( 'Settings for my projects.', 'stanleywp' ),
-	    'priority'       => 160,  
+	    'priority'       => 160,
 	) );
 
 	Kirki::add_field( 'stanleywp_theme', array(

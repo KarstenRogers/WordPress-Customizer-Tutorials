@@ -73,5 +73,29 @@ Kirki::add_field( 'stanleywp_theme', array(
 	),
 ) );
 
+Kirki::add_field( 'stanleywp_theme', [
+	'type'        => 'typography',
+	'settings'    => 'project_typography',
+	'label'       => esc_html__( 'Control Label', 'kirki' ),
+	'section'     => 'section_id',
+	'default'     => [
+		'font-family'    => 'Roboto',
+		'variant'        => 'regular',
+		'font-size'      => '14px',
+		'line-height'    => '1.5',
+		'letter-spacing' => '0',
+		'color'          => '#333333',
+		'text-transform' => 'none',
+		'text-align'     => 'left',
+	],
+	'priority'    => 10,
+	'transport'   => 'auto',
+	'output'      => [
+		[
+			'element' => 'body',
+		],
+	],
+] );
+
 
 }

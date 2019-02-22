@@ -97,5 +97,18 @@ Kirki::add_field( 'stanleywp_theme', [
 	],
 ] );
 
+Kirki::add_field( 'stanleywp_theme', [
+	'type'        => 'slider',
+	'settings'    => 'my_setting',
+	'label'       => esc_html__( 'This is the label', 'kirki' ),
+	'section'     => 'stanley_slider',
+	'default'     => 50,
+	'choices'     => [
+		'min'  => 0,
+		'max'  => 100,
+		'step' => 1,
+	],
+] );
+
 
 }
